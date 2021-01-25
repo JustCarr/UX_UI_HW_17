@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    font-family: 'Courier New', Courier, monospace
+    font-size: 20px;
+    padding: 0 8%;
+}
+nav {
+    height: 72px;
+    padding: 8px;
+}
+.ln {
+    border: 1px solid #bdbdbd;
+}
+.grid-container-cols-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#logo {
+    grid-column: span 6;
+}
+#nav-buttons {
+    grid-column: span 6;
+    display: flex;
+}
+.button-nav {
+    padding: 0 16px;
+}
+#social {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
